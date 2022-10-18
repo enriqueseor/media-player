@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         initRecyclerView()
     }
 
-    fun initRecyclerView(){
+    private fun initRecyclerView(){
         val manager = LinearLayoutManager(this)
         val decoration = DividerItemDecoration(this, manager.orientation)
         binding.recyclerMediaPlayer.layoutManager = manager
@@ -35,10 +35,11 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerMediaPlayer.addItemDecoration(decoration)
     }
 
-    fun onItemSelected(media: Media){
+    private fun onItemSelected(media: Media){
         Toast.makeText(this, media.songName, Toast.LENGTH_SHORT).show()
-        val intent = Intent(this@MainActivity, PlayerActivity::class.java)
-        intent.putExtra("song", media.song)
+        val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
+        intent.putExtra("song" , media.song)
+        intent.putExtra("image", media.image)
         startActivity(intent)
     }
 }

@@ -6,11 +6,32 @@ object MediaProvider {
     val mediaList = listOf(
         Media(
             "AUDIO",
-            "ROSALIA, The Weeknd",
-            "LA FAMA",
-            R.raw.audio_lafama,
-            image = R.drawable.img_lafama,
+            "Bad Bunny",
+            "Bichiyal",
+            R.raw.audio_bichiyal,
+            image = R.drawable.img_yhlqmdlg,
             ),
+        Media(
+            "AUDIO",
+            "Ryan Castro",
+            "Jordan",
+            R.raw.audio_jordan,
+            image = R.drawable.img_jordan
+        ),
+        Media(
+            "AUDIO",
+            "Bad Bunny",
+            "La Difícil",
+            R.raw.audio_ladificil,
+            image = R.drawable.img_yhlqmdlg
+        ),
+        Media(
+            "AUDIO",
+            "Miyagi",
+            "Minor",
+            R.raw.audio_minor,
+            image = R.drawable.img_minor
+        ),
         Media(
             "AUDIO",
             "Alejo, Feid, ROBI",
@@ -24,27 +45,6 @@ object MediaProvider {
             "Sensual bebé",
             R.raw.audio_sensualbebe,
             image = R.drawable.img_sensualbebe
-        ),
-        Media(
-            "VIDEO",
-            "Omar Monter, Kevin Roldan",
-            "Bésame",
-            R.raw.video_besame,
-            image = R.drawable.img_besame
-        ),
-        Media(
-            "VIDEO",
-            "La Pantera, Quevedo, Juseph",
-            "Cayó la noche [Remix]",
-            R.raw.video_cayolanoche,
-            image = R.drawable.img_cayolanoche
-        ),
-        Media(
-            "VIDEO",
-            "Jey Blessing, Rauw Alejandro",
-            "Suave - Remix",
-            R.raw.video_suaveremix,
-            image = R.drawable.img_suaveremix
         )
     )
 }

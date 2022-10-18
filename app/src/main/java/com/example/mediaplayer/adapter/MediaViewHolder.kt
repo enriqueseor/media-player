@@ -8,7 +8,7 @@ import com.example.mediaplayer.media.Media
 
 class MediaViewHolder(view:View):RecyclerView.ViewHolder(view) {
 
-    val binding = ItemMediaBinding.bind(view)
+    private val binding = ItemMediaBinding.bind(view)
 
     fun render(mediaModel: Media, onClickListener:(Media) -> Unit){
         binding.tvMediaType.text = mediaModel.mediaType
