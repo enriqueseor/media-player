@@ -15,25 +15,25 @@ class AudioPlayerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_audioplayer)
 
-        val song: Int? = intent.extras?.getInt("song")
-
         val imageView = findViewById<View>(R.id.ivMedia) as ImageView
         val image = intent.extras?.getInt("image")
         if (image != null) {
             imageView.setImageResource(image)
         }
 
+        val song: Int? = intent.extras?.getInt("song")
         mediaPlayer = song?.let { MediaPlayer.create(this, it) }
 
         btnPlayAudio()
         btnPauseAudio()
-        song?.let { btnStopAudio(it) }
-
+        btnStopAudio()
     }
 
     private fun btnPlayAudio(){
         val button: ImageButton = findViewById(R.id.fab_play)
         button.setOnClickListener {
+            val song: Int? = intent.extras?.getInt("song")
+            mediaPlayer = song?.let { MediaPlayer.create(this, it) }
             mediaPlayer?.start()
         }
     }
@@ -45,36 +45,15 @@ class AudioPlayerActivity : AppCompatActivity() {
         }
     }
 
-    private fun btnStopAudio(song: Int){
+    private fun btnStopAudio(){
         val button: ImageButton = findViewById(R.id.fab_stop)
         button.setOnClickListener {
             mediaPlayer?.stop()
-            mediaPlayer = song.let { MediaPlayer.create(this, it) }
         }
     }
 
-    /*
-    private fun seekBar(){
-        val seekbar: SeekBar = findViewById(R.id.seekBar)
-
-        seekbar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                if (fromUser) mediaPlayer?.seekTo(progress)
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
-        })
+    override fun onDestroy() {
+        super.onDestroy()
+        mediaPlayer?.stop()
     }
-
-    private fun initialiseSeekBar(){
-        val seekbar: SeekBar = findViewById(R.id.seekBar)
-        seekbar.max = mediaPlayer!!.duration
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            seekbar.progress = mediaPlayer!!.currentPosition
-
-        }, 1000)
-    }*/
 }

@@ -28,18 +28,22 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerMediaPlayer.layoutManager = manager
         binding.recyclerMediaPlayer.adapter =
             MediaAdapter(MediaProvider.mediaList) { media ->
-                onItemSelected(
-                    media
-                )
+                onItemSelected(media)
             }
         binding.recyclerMediaPlayer.addItemDecoration(decoration)
     }
 
     private fun onItemSelected(media: Media){
         Toast.makeText(this, media.songName, Toast.LENGTH_SHORT).show()
-        val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
-        intent.putExtra("song" , media.song)
-        intent.putExtra("image", media.image)
-        startActivity(intent)
+        if(media.mediaType == "AUDIO"){
+            val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
+            intent.putExtra("song" , media.song)
+            intent.putExtra("image", media.image)
+            startActivity(intent)
+        }else{
+            val intent = Intent(this@MainActivity, VideoPlayerActivity::class.java)
+            intent.putExtra("song" , media.song)
+            startActivity(intent)
+        }
     }
 }
