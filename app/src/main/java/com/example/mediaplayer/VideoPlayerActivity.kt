@@ -46,9 +46,4 @@ class VideoPlayerActivity : AppCompatActivity() {
             mediaPlayerv?.setVideoURI(myvideoUri)
         }
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        mediaPlayerv?.stopPlayback()
-    }
 }
