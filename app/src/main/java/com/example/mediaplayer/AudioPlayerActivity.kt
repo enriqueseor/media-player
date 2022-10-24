@@ -15,15 +15,18 @@ class AudioPlayerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_audioplayer)
 
+        /*SET IMAGE*/
         val imageView = findViewById<View>(R.id.ivMedia) as ImageView
         val image = intent.extras?.getInt("image")
         if (image != null) {
             imageView.setImageResource(image)
         }
 
+        /*SET TRACK*/
         val song: Int? = intent.extras?.getInt("song")
         mediaPlayer = song?.let { MediaPlayer.create(this, it) }
 
+        /*SET BUTTONS*/
         btnPlayAudio()
         btnPauseAudio()
         btnStopAudio()
@@ -32,8 +35,6 @@ class AudioPlayerActivity : AppCompatActivity() {
     private fun btnPlayAudio(){
         val button: ImageButton = findViewById(R.id.fab_play)
         button.setOnClickListener {
-            val song: Int? = intent.extras?.getInt("song")
-            mediaPlayer = song?.let { MediaPlayer.create(this, it) }
             mediaPlayer?.start()
         }
     }
