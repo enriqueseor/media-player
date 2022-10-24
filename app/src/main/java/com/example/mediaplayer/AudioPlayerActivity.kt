@@ -50,6 +50,8 @@ class AudioPlayerActivity : AppCompatActivity() {
         val button: ImageButton = findViewById(R.id.fab_stop)
         button.setOnClickListener {
             mediaPlayer?.stop()
+            val song: Int? = intent.extras?.getInt("song")
+            mediaPlayer = song?.let { MediaPlayer.create(this, it) }
         }
     }
 
