@@ -17,6 +17,6 @@ Para mi es una aplicación especial, ya que fue la primera app Android que reali
 
 Además el proyecto no esta acabado (el seekBar no funciona).
 
-<img src= ![photo_2022-10-24_22-55-12](https://user-images.githubusercontent.com/101838134/197638684-1344bd2e-0760-43b8-9d59-b36ecd28dedc.jpg) width=50% height=50%>
-<img src= ![photo_2022-10-24_22-55-11](https://user-images.githubusercontent.com/101838134/197638670-354eb871-2670-4b9d-94f5-823cb0b1240d.jpg) width=50% height=50%>
-<img src= ![photo_2022-10-24_23-02-09](https://user-images.githubusercontent.com/101838134/197638709-0a28a110-69c7-4eb1-bd9f-1292920ab9b6.jpg) width=50% height=50%>
+![photo_2022-10-24_22-55-12](https://user-images.githubusercontent.com/101838134/197638684-1344bd2e-0760-43b8-9d59-b36ecd28dedc.jpg)
+![photo_2022-10-24_22-55-11](https://user-images.githubusercontent.com/101838134/197638670-354eb871-2670-4b9d-94f5-823cb0b1240d.jpg)
+![photo_2022-10-24_23-02-09](https://user-images.githubusercontent.com/101838134/197638709-0a28a110-69c7-4eb1-bd9f-1292920ab9b6.jpg)
