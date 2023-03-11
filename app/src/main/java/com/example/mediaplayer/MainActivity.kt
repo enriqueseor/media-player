@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onItemSelected(media: Media){
-        Toast.makeText(this, media.songName, Toast.LENGTH_SHORT).show()
         if(media.mediaType == "AUDIO"){
             val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
             intent.putExtra("song" , media.song)
