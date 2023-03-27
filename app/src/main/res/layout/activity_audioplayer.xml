@@ -21,12 +21,6 @@
             android:layout_marginBottom="40dp"
             tools:ignore="ContentDescription" />
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp" />
-
         <LinearLayout
             android:id="@+id/ll_wrapper"
             android:layout_width="wrap_content"

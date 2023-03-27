@@ -34,15 +34,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onItemSelected(media: Media){
-        if(media.mediaType == "AUDIO"){
-            val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
-            intent.putExtra("song" , media.song)
-            intent.putExtra("image", media.image)
-            startActivity(intent)
-        }else{
-            val intent = Intent(this@MainActivity, VideoPlayerActivity::class.java)
-            intent.putExtra("song" , media.song)
-            startActivity(intent)
-        }
+        val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
+        intent.putExtra("song" , media.song)
+        intent.putExtra("image", media.image)
+        startActivity(intent)
     }
 }

@@ -5,10 +5,10 @@ import com.example.mediaplayer.R
 object MediaProvider {
     val mediaList = listOf(
         Media(
-            "VIDEO",
-            "Sharlene, Lalo Ebratt - Trapical minds",
+            "AUDIO",
+            "Sharlene, Lalo Ebratt",
             "El Vecino",
-            R.raw.video_elvecino,
+            R.raw.audio_elvecino,
             image = R.drawable.img_elvecino
         ),
         Media(
@@ -54,10 +54,10 @@ object MediaProvider {
             image = R.drawable.img_sensualbebe
         ),
         Media(
-            "VIDEO",
+            "AUDIO",
             "ROSALÍA",
             "DESPECHÁ",
-            R.raw.video_despecha,
+            R.raw.audio_despecha,
             image = R.drawable.img_despecha
         )
     )
