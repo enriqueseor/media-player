@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class AudioPlayerActivity : AppCompatActivity() {
@@ -20,6 +21,14 @@ class AudioPlayerActivity : AppCompatActivity() {
         val image = intent.extras?.getInt("image")
         if (image != null) {
             imageView.setImageResource(image)
+        }
+
+        /*SET SONG NAME*/
+        val textView = findViewById<View>(R.id.tvSongText) as TextView
+        textView.text = buildString {
+        append(intent.extras?.getString("singerName")!!)
+        append(" - ")
+        append(intent.extras?.getString("songName")!!)
         }
 
         /*SET TRACK*/

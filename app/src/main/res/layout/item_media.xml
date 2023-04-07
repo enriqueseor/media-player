@@ -24,30 +24,30 @@
             android:id="@+id/tvSingerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="SINGER NAME"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ivMedia"/>
+            app:layout_constraintStart_toEndOf="@+id/ivMedia"
+            tools:text="SINGER NAME"/>
 
         <TextView
             android:id="@+id/tvSongName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="SONG NAME"
-            app:layout_constraintEnd_toEndOf="parent"
             android:textSize="21sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/tvSingerName"
-            app:layout_constraintStart_toEndOf="@+id/ivMedia"/>
+            app:layout_constraintStart_toEndOf="@+id/ivMedia"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="SONG NAME"/>
 
         <TextView
             android:id="@+id/tvMediaType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="MEDIA TYPE"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="MEDIA TYPE"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

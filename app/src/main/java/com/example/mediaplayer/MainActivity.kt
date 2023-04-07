@@ -37,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this@MainActivity, AudioPlayerActivity::class.java)
         intent.putExtra("song" , media.song)
         intent.putExtra("image", media.image)
+        intent.putExtra("singerName", media.singerName)
+        intent.putExtra("songName", media.songName)
         startActivity(intent)
     }
 }
