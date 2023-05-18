@@ -19,6 +19,7 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -33,6 +34,7 @@
             tools:text="SINGER NAME - SONG NAME" />
 
         <SeekBar
+            android:id="@+id/seekBar"
             android:layout_width="360dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp" />
