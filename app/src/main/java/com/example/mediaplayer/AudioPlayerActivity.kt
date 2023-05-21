@@ -38,15 +38,12 @@ class AudioPlayerActivity : AppCompatActivity() {
         /*SET SEEKBAR*/
         seekBar = findViewById(R.id.seekBar)
         setupSeekBar()
+        seekBar.max = mediaPlayer?.duration ?: 0
+        updateSeekBarProgress()
 
         /*SET TRACK*/
         val song: Int? = intent.extras?.getInt("song")
         mediaPlayer = song?.let { MediaPlayer.create(this, it) }!!
-
-        // Set the maximum value for the SeekBar
-        seekBar.max = mediaPlayer?.duration ?: 0
-
-        updateSeekBarProgress()
 
         /*SET BUTTONS*/
         btnPlayAudio()
