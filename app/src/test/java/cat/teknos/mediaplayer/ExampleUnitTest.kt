@@ -1,4 +1,4 @@
-package com.example.mediaplayer
+package cat.teknos.mediaplayer
 
 import org.junit.Test
 

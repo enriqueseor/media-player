@@ -1,14 +1,14 @@
-package com.example.mediaplayer
+package cat.teknos.mediaplayer
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import cat.teknos.mediaplayer.adapter.MediaAdapter
 import cat.teknos.mediaplayer.databinding.ActivityMainBinding
-import com.example.mediaplayer.adapter.MediaAdapter
-import com.example.mediaplayer.media.Media
-import com.example.mediaplayer.media.MediaProvider
+import cat.teknos.mediaplayer.media.Media
+import cat.teknos.mediaplayer.media.MediaProvider
 
 class MainActivity : AppCompatActivity() {
 

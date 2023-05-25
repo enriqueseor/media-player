@@ -1,4 +1,4 @@
-package com.example.mediaplayer.media
+package cat.teknos.mediaplayer.media
 
 data class Media(
     val mediaType:String,

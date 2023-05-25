@@ -11,15 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MediaPlayer">
         <activity
-            android:name=".VideoPlayerActivity"
-            android:screenOrientation="portrait"
-            android:exported="false"
-            tools:ignore="LockedOrientationActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".AudioPlayerActivity"
             android:screenOrientation="portrait"
             android:exported="false"
