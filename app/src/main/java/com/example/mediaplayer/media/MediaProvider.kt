@@ -1,6 +1,6 @@
 package com.example.mediaplayer.media
 
-import com.example.mediaplayer.R
+import cat.teknos.mediaplayer.R
 
 object MediaProvider {
     val mediaList = listOf(

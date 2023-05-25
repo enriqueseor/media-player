@@ -2,8 +2,8 @@ package com.example.mediaplayer.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import cat.teknos.mediaplayer.databinding.ItemMediaBinding
 import com.bumptech.glide.Glide
-import com.example.mediaplayer.databinding.ItemMediaBinding
 import com.example.mediaplayer.media.Media
 
 class MediaViewHolder(view:View):RecyclerView.ViewHolder(view) {

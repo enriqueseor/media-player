@@ -3,11 +3,10 @@ package com.example.mediaplayer
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import cat.teknos.mediaplayer.databinding.ActivityMainBinding
 import com.example.mediaplayer.adapter.MediaAdapter
-import com.example.mediaplayer.databinding.ActivityMainBinding
 import com.example.mediaplayer.media.Media
 import com.example.mediaplayer.media.MediaProvider
 

@@ -3,7 +3,7 @@ package com.example.mediaplayer.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mediaplayer.R
+import cat.teknos.mediaplayer.R
 import com.example.mediaplayer.media.Media
 
 class MediaAdapter(private val mediaList:List<Media>, private val onClickListener:(Media) -> Unit) : RecyclerView.Adapter<MediaViewHolder>() {
