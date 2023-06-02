@@ -17,5 +17,5 @@ Para mi es una aplicación especial, ya que fue la primera app Android que reali
 La aplicación esta compuesta por un reciclerView the canciones guardadas localmente en la aplicación. Clicando en alguno de los
 items serás dirigido a otra actividad en donde podrás reproducir la música.
 
-![img_mediaplayer1](https://user-images.githubusercontent.com/101838134/228034251-8aca135d-54d3-41e7-8bd1-fd676252308d.jpg)
-![img_mediaplayer2](https://user-images.githubusercontent.com/101838134/228034258-bbd956c7-4401-4c63-b394-9ea4b3612d55.jpg)
+![mediaPlayer1](https://github.com/enriqueseor/media-player/assets/101838134/635761dc-9603-472c-bd81-c0e5452d9141)
+![mediaPlayer2](https://github.com/enriqueseor/media-player/assets/101838134/b536af3a-75ff-4727-b3b7-8ebe780590a2)
