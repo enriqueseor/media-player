@@ -21,29 +21,17 @@ class AudioPlayerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_audioplayer)
 
         /*SET IMAGE*/
-        val imageView = findViewById<View>(R.id.ivMedia) as ImageView
-        val image = intent.extras?.getInt("image")
-        if (image != null) {
-            imageView.setImageResource(image)
-        }
+        setImage()
 
         /*SET SONG NAME*/
-        val textView = findViewById<View>(R.id.tvSongText) as TextView
-        textView.text = buildString {
-            append(intent.extras?.getString("singerName")!!)
-            append(" - ")
-            append(intent.extras?.getString("songName")!!)
-        }
-
-        /*SET SEEKBAR*/
-        seekBar = findViewById(R.id.seekBar)
-        setupSeekBar()
-        seekBar.max = mediaPlayer?.duration ?: 0
-        updateSeekBarProgress()
+        setSongName()
 
         /*SET TRACK*/
-        val song: Int? = intent.extras?.getInt("song")
-        mediaPlayer = song?.let { MediaPlayer.create(this, it) }!!
+        setTrack()
+
+        /*SET SEEKBAR*/
+        setupSeekBar()
+        updateSeekBarProgress()
 
         /*SET BUTTONS*/
         btnPlayAudio()
@@ -51,7 +39,30 @@ class AudioPlayerActivity : AppCompatActivity() {
         btnStopAudio()
     }
 
+    private fun setImage(){
+        val imageView = findViewById<View>(R.id.ivMedia) as ImageView
+        val image = intent.extras?.getInt("image")
+        if (image != null) {
+            imageView.setImageResource(image)
+        }
+    }
+
+    private fun setSongName(){
+        val textView = findViewById<View>(R.id.tvSongText) as TextView
+        textView.text = buildString {
+            append(intent.extras?.getString("singerName")!!)
+            append(" - ")
+            append(intent.extras?.getString("songName")!!)
+        }
+    }
+
+    private fun setTrack(){
+        val song: Int? = intent.extras?.getInt("song")
+        mediaPlayer = song?.let { MediaPlayer.create(this, it) }!!
+    }
+
     private fun setupSeekBar() {
+        seekBar = findViewById(R.id.seekBar)
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (fromUser) mediaPlayer?.seekTo(progress)
@@ -62,12 +73,13 @@ class AudioPlayerActivity : AppCompatActivity() {
     }
 
     private fun updateSeekBarProgress() {
+        seekBar.max = mediaPlayer?.duration ?: 0
         val timer = Timer()
         timer.scheduleAtFixedRate(object : TimerTask() {
             override fun run() {
                 try {
                     mediaPlayer?.let { player ->
-                        runOnUiThread {
+                        if (player.isPlaying) {
                             val currentPosition = player.currentPosition
                             seekBar.progress = currentPosition
                         }
