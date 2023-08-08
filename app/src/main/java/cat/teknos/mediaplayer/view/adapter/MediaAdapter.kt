@@ -1,10 +1,10 @@
-package cat.teknos.mediaplayer.adapter
+package cat.teknos.mediaplayer.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import cat.teknos.mediaplayer.R
-import cat.teknos.mediaplayer.media.Media
+import cat.teknos.mediaplayer.data.model.Media
 
 class MediaAdapter(private val mediaList:List<Media>, private val onClickListener:(Media) -> Unit) : RecyclerView.Adapter<MediaViewHolder>() {
 

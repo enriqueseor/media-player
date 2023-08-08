@@ -1,4 +1,4 @@
-package cat.teknos.mediaplayer.media
+package cat.teknos.mediaplayer.data.model
 
 data class Media(
     val singerName:String,

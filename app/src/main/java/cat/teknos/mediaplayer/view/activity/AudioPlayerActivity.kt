@@ -1,4 +1,4 @@
-package cat.teknos.mediaplayer
+package cat.teknos.mediaplayer.view.activity
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import cat.teknos.mediaplayer.R
 import java.util.Timer
 import java.util.TimerTask
 

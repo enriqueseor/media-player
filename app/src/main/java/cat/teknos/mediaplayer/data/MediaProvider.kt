@@ -1,6 +1,7 @@
-package cat.teknos.mediaplayer.media
+package cat.teknos.mediaplayer.data
 
 import cat.teknos.mediaplayer.R
+import cat.teknos.mediaplayer.data.model.Media
 
 object MediaProvider {
     val mediaList = listOf(
