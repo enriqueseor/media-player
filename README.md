@@ -10,6 +10,7 @@ ESPAÑOL:
 
 La aplicación esta compuesta por un reciclerView the canciones guardadas localmente en la aplicación. Clicando en cualquiera 
 de las canciones se abrira otra activity y serás dirigido a otra actividad en donde podrás reproducir la canción.
+<br>
 
-![mediaPlayer1](https://github.com/enriqueseor/media-player/assets/101838134/635761dc-9603-472c-bd81-c0e5452d9141)
-![mediaPlayer2](https://github.com/enriqueseor/media-player/assets/101838134/b536af3a-75ff-4727-b3b7-8ebe780590a2)
+![mainactivity](https://github.com/enriqueseor/media-player/assets/101838134/2b60987e-2a33-4c39-94ac-01c9cb9d3d8c)
+![audioplayeractivity](https://github.com/enriqueseor/media-player/assets/101838134/45a7de38-2cf7-46f6-a7bf-892e0bed4f7e)
