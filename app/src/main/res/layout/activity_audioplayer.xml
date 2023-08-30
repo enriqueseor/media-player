@@ -55,7 +55,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 app:srcCompat="@drawable/ic_play"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab_pause"
@@ -65,7 +65,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 app:srcCompat="@drawable/ic_pause"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab_stop"
@@ -75,7 +75,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 app:srcCompat="@drawable/ic_stop"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
