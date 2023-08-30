@@ -1,16 +1,42 @@
 # MediaPlayer
 
-ENGLISH:
-
-The app is composed by a reciclerView the songs saved locally in the application. Clicking on any 
-of the songs will open another activity and you will be directed to another activity where you can play the song.
-
-
-ESPAÑOL:
-
-La aplicación esta compuesta por un reciclerView the canciones guardadas localmente en la aplicación. Clicando en cualquiera 
-de las canciones se abrira otra activity y serás dirigido a otra actividad en donde podrás reproducir la canción.
-<br>
+The Media Player App is an Android application that allows users to play audio files.
+This is a simple and fun app doned using [Android](https://www.android.com/) and is a great example of a casual app for mobile devices.
 
 ![mainactivity](https://github.com/enriqueseor/media-player/assets/101838134/2b60987e-2a33-4c39-94ac-01c9cb9d3d8c)
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Play audio files.
+- Support for a wide range of multimedia formats.
+- Basic playback controls: play, pause, stop, skip, volume control, etc.
+
 ![audioplayeractivity](https://github.com/enriqueseor/media-player/assets/101838134/45a7de38-2cf7-46f6-a7bf-892e0bed4f7e)
+
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/enriqueseor/media-player.git
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to Media-Player, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -am 'Add new feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
