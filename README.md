@@ -1,9 +1,8 @@
 # MediaPlayer
 
-The Media Player App is an Android application that allows users to play audio files.
-This is a simple and fun app doned using [Android](https://www.android.com/) and is a great example of a casual app for mobile devices.
+The Media Player App is an [Android](https://www.android.com/) application that allows users to play audio files.
 
-![mainactivity](https://github.com/enriqueseor/media-player/assets/101838134/2b60987e-2a33-4c39-94ac-01c9cb9d3d8c)
+![MainActivity](images/MainActivity.png)
 
 ## Table of Contents
 
@@ -18,7 +17,7 @@ This is a simple and fun app doned using [Android](https://www.android.com/) and
 - Support for a wide range of multimedia formats.
 - Basic playback controls: play, pause, stop, skip, volume control, etc.
 
-![audioplayeractivity](https://github.com/enriqueseor/media-player/assets/101838134/45a7de38-2cf7-46f6-a7bf-892e0bed4f7e)
+![AudioActivity](images/AudioActivity.png)
 
 ## Installation
 
@@ -26,6 +25,10 @@ This is a simple and fun app doned using [Android](https://www.android.com/) and
 
    ```bash
    git clone https://github.com/enriqueseor/media-player.git
+
+2. Open the directory with your Android Studio.
+3. Configure a physical or virtual device.
+4. Build and Run the project.
 
 ## Contributing
 
