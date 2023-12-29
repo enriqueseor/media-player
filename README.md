@@ -7,8 +7,7 @@ The Media Player App is an [Android](https://www.android.com/) application that 
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
-- [Contributing](#contributing)
+- [Getting Started](#getting-started)
 - [License](#license)
 
 ## Features
@@ -19,7 +18,7 @@ The Media Player App is an [Android](https://www.android.com/) application that 
 
 ![AudioActivity](images/AudioActivity.png)
 
-## Installation
+## Getting Started
 
 1. Clone the repository to your local machine:
 
@@ -29,16 +28,6 @@ The Media Player App is an [Android](https://www.android.com/) application that 
 2. Open the directory with your Android Studio.
 3. Configure a physical or virtual device.
 4. Build and Run the project.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to Media-Player, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -am 'Add new feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Create a pull request.
 
 ## License
 
